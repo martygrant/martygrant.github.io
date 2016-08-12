@@ -12,8 +12,31 @@
     <title>Martin Grant</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/jumbotron-narrow.css" rel="stylesheet">
     
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+    <style>
+        /* GLOBAL STYLES
+    -------------------------------------------------- */
+        /* Padding below the footer and lighter body text */
+        
+        body {
+            padding-bottom: 40px;
+            color: #5a5a5a;
+            /*font-family: 'Open Sans', sans-serif;*/
+        }
+        table {
+            table-layout: fixed;
+            width: 450px; 
+        }
+        table,
+        th,
+        td {
+            padding: 4px;
+        }
+    </style>
     <!-- Custom CSS -->
     <style>
         body {
@@ -56,7 +79,7 @@
                         <a href="#">CV</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -69,10 +92,10 @@
     <div class="container">
 
         <div class="row">
-            <div class="col-lg-7 col-md-offset-2">
+            <div class="col-lg-8 col-md-offset-2">
                 <h1>Martin Grant <small>/ Computer Programmer</small></h1>
-                <p>Hello. I'm Martin, a computer programmer from Glasgow, Scotland. I am currently studying Computing Science
-                    MSc at the University of Glasgow. I am also currently employed as an iOS Developer at MindMate. 
+                <p class="lead">Hello. I'm Martin, a computer programmer from Glasgow, Scotland. I am currently studying Computing Science
+                    MSc at the University of Glasgow. I just finished an internship as an iOS Developer at MindMate. 
                     You can see my background and experience listed below and can download my CV here. 
                     Have a look at my portfolio of work here.
                 </p>
@@ -83,26 +106,27 @@
         <hr>
 
         <div class="row">
-            <div class="col-lg-4 col-md-offset-2">
+            <div class="col-lg-5 col-md-offset-1">
                 <h2>Education</h2>
-                <p>Computing Science MSc</p>
-                <p>University of Glasgow 2015 - Present</p>
-
-                <p>2.1 Computer Games Technology BSc (Hons)</p>
-                <p>University of the West of Scotland 2011 - 2015</p>
+                <h4>Computing Science MSc</h4>
+                <p>University of Glasgow <small>/ 2015 - Present</small></p>
+                <p>&nbsp;</p>
+                <p></p>
+                <h4>2.1 Computer Games Technology BSc (Hons)</h4>
+                <p>University of the West of Scotland <small>/ 2011 - 2015</small></p>
             </div>
 
-            <div class="col-lg-5">
+            <div class="col-lg-6">
                 <h2>Experience</h2>
-                <h4>MindMate <small>/ iOS Developer</small></h4>
+                <h4>MindMate - iOS Developer<small> / June - August 2015</small></h4>
                 <p>Worked on the MindMate iOS app to improve and polish the range of games to improve their playability and
-                    accessibility for a specific audience, as users are people with Dementia and Alzheimer’s. During my time
+                    accessibility for users, who suffer from Dementia and Alzheimer’s. During my time
                     here the app reached #2 in the Health category on the App Store.</p>
-                <h4>Tick Tock Games <small>/ Junior Programmer Intern</small></h4>
-                <p>Assisted the senior programming team as well as working with my own tasks. Responsible for preparing
+                <h4>Tick Tock Games - Junior Programmer Intern <small> / July - August 2014</small></h4>
+                <p>Assisted the senior programming team, and responsible for preparing
                     a previously released game for launch on a new platform. Contributed to game projects released across
                     Android, iOS, OS X and PC.</p>
-                <h4>Enable Scotland <small>/ Game Development Consultant</small></h4>
+                <h4>Enable Scotland - Game Development Consultant<small> / July - August 2014</small></h4>
                 <p>Assisted running a summer workshop giving young people with learning disabilities a taster in game development.
                     I developed a working implementation of their game design which was shown at a launch night where national charities attended.
                     The project was featured in national press.
@@ -110,28 +134,66 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-4 col-md-offset-2">
+            <div class="col-lg-5 col-md-offset-1">
                 <h2>Skills</h2>
                 <h4>Languages</h4>
-                    <p>C++, C, C#, Java, HTML, Javascript, CSS, Python, Swift, GLSL</p>
-                    <h4>Technologies</h4>
-                    <p>Android, iOS, Git, Monogame/XNA, SDL, OpenGL, Unreal Engine 4, Construct 2, GameMaker</p>
+                    <table>
+                        <tr>
+                            <td>C++</td>
+                            <td>C</td>
+                            <td>C#</td>
+                            <td>Java</td>
+                            <td>Swift</td>
+                        <tr>
+                            <td>HTML</td>
+                            <td>Javascript</td>
+                            <td>CSS</td>
+                            <td>Python</td>
+                            <td>GLSL</td>
+                        </tr>
+                    </table>
+                <h4>Technologies</h4>
+                    <table>
+                        <tr>
+                            <td>Android</td>
+                            <td>iOS</td>
+                            <td>Git</td>
+                            <td>Monogame</td>
+                            <td>Unreal Engine 4</td>
+                        <tr>
+                            <td>OpenGL</td>
+                            <td>SDL</td>
+                            <td>Django</td>
+                            <td>GameMaker</td>
+                            <td>Construct 2</td>
+                        </tr>
+                    </table>
             </div>
 
-            <div class="col-lg-4">
+            <div class="col-lg-6">
                 <h2>Awards</h2>
-                <p>Court Medal for Most Distinguished Student 2011-2012 for my Computer Games Technology degree at UWS.</p>
                 <p>Honourable mention for the 2014 Develop 30 Under 30 list.</p>
-                <p>Winner of the 2013 UWS Windows 8 game jam, sponsored by Microsoft with my Windows Store and Google Play published
-                    game, Unicorn Space Command.</p>
+                <p>Winner of 2013 UWS Windows 8 game jam, sponsored by Microsoft with Unicorn Space Command. Publihsed on Windows Store and Google Play.</p>
+                <p>Court Medal for Most Distinguished Student 2011-2012 for my Computer Games Technology degree at UWS.</p>
             </div>
         </div>
         <hr>
 
+        <div class="row">
+            <div class="col-lg-8 col-md-offset-2 text-center">
+                <h1>Contact</h1>
+                <p class="lead"><a href="mailto:martingrant@outlook.com">martingrant@outlook.com</a></p>
+                
+                <p class="lead"><a href="https://uk.linkedin.com/in/martin-grant-3290b443">Linkedin</a></p>
+            </div>
+        </div>
+
+        <hr>
+
         <!-- Footer -->
         <footer>
-            <div class="row">
-                <div class="col-lg-12">
+            <div class="row" id="contact">
+                <div class="col-lg-8 col-md-offset-2">
                     <p class="pull-right"><a href="#">Back to top</a></p>
                     <p>Copyright &copy; Martin Grant 2016</p>
                     
