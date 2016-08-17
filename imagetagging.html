@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Image Tagging - Martin Grant - Portfolio</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/portfolio-item.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css"
+    />
+    <style type="text/css">
+        a.fancybox img {
+            border: none;
+            box-shadow: 0 1px 7px rgba(0, 0, 0, 0.3);
+            -o-transform: scale(1, 1);
+            -ms-transform: scale(1, 1);
+            -moz-transform: scale(1, 1);
+            -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+            -o-transition: all 0.2s ease-in-out;
+            -ms-transition: all 0.2s ease-in-out;
+            -moz-transition: all 0.2s ease-in-out;
+            -webkit-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
+        }
+        
+        a.fancybox:hover img {
+            position: relative;
+            z-index: 999;
+            -o-transform: scale(1.03, 1.03);
+            -ms-transform: scale(1.03, 1.03);
+            -moz-transform: scale(1.03, 1.03);
+            -webkit-transform: scale(1.03, 1.03);
+            transform: scale(1.03, 1.03);
+        }
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Martin Grant</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#">CV</a>
+                    </li>
+                    <li>
+                        <a href="index.html#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Portfolio Item Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Image Tagging
+                    <small>Coursework</small>
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Portfolio Item Row -->
+        <div class="row">
+
+            <div class="col-md-7">
+                <img class="img-responsive fancybox" src="images/imagetagging2.png" alt="Excurj">
+            </div>
+
+            <div class="col-md-5">
+                <h3>Project Description</h3>
+                <p>Coursework for my Multimedia Systems and Applications class. I was given a dataset of 10,000 images from Flickr. I was tasked with developing a program that
+                    could recommend image tags, based on the sample data set. A user inputs a tag and the system will output the top 5 related tags. The system used a co-occurrence matrix technique, where tags
+                    are deemed related if they appear together for a particular image. E.g. if many images have "city" and "architecture" together, inputting "city", the system will suggest "architecture".
+                    The project processes data using .csv files for the 10,000 image data set, parses and stores it into data structures to create the co-occurrence matrix. It also calculates the IDF (inverse document frequency) 
+                    to use a weighting factor to get more accurate results. Services like Flickr, Instagram and Youtube use something similar to this when users upload content.
+                </p>
+            </div>
+            <div class="col-md-3">
+                <h3>Links</h3>
+                <ul>
+                <li><a href="https://bitbucket.org/martingrant/image-tagging/">Source Code</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <h3>Technology</h3>
+                <ul>
+                    <li>C++</li>
+                </ul>
+                
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row" id="contact">
+                <div class="col-lg-8 col-md-offset-2">
+                    <p class="pull-right"><a href="#">Back to top</a></p>
+                    <p>Copyright &copy; Martin Grant 2016</p>
+                    
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+       <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.min.js"></script>
+    <script type="text/javascript">
+    $(function($){
+        var addToAll = false;
+        var gallery = true;
+        var titlePosition = 'inside';
+        $(addToAll ? 'img' : 'img.fancybox').each(function(){
+            var $this = $(this);
+            var title = $this.attr('title');
+            var src = $this.attr('data-big') || $this.attr('src');
+            var a = $('<a href="#" class="fancybox"></a>').attr('href', src).attr('title', title);
+            $this.wrap(a);
+        });
+        if (gallery)
+            $('a.fancybox').attr('rel', 'fancyboxgallery');
+        $('a.fancybox').fancybox({
+            titlePosition: titlePosition
+        });
+    });
+    $.noConflict();
+</script>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
