@@ -358,11 +358,20 @@ template {
   display: none !important;
 }
 
+.martingrant {
+  font-family: "Calistoga" !important;
+  text-transform: none;
+}
+.martingrant2 {
+  font-family: "Calistoga" !important;
+  font-size: 1.5rem;
+}
+
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
   font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.2;
   color: #000000d1;
 }
